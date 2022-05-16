@@ -1,13 +1,23 @@
 import React, { FC } from "react";
-import { BookUI, BookComponent } from "../../types/types";
-import s from "./Book.module.scss";
 import { useDispatch, useSelector } from "react-redux";
+
+// Types
+import { BookUI, BookComponent } from "../../types/types";
+
+// Selectors
 import {
   selectorGetBooks,
   selectorGetCurrentBook,
 } from "../../ReduxStore/reducer";
+
+// Actions
 import { BookActionTypes } from "../../ReduxStore/reducer/action-types";
 
+// Styles
+import s from "./Book.module.scss";
+
+// TODO: Change order for imports like here for every component
+// TODO: Add memo to this component
 const Book: FC<BookComponent> = ({ image, id, order }) => {
   const book = { id, order, image };
   const bookList = useSelector(selectorGetBooks);

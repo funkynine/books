@@ -1,5 +1,7 @@
 import { BookUI } from "../../types/types";
 
+// TODO: rename folder from reducer to book
+
 export type BookActions =
   | GetBooksAction
   | LoadDataAction

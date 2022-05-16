@@ -3,6 +3,7 @@ import axios from "axios";
 import { BookActionTypes } from "../reducer/action-types";
 
 async function getBooks() {
+  // TODO: Don't use await and then in one place (remove all then's)
   const res = await axios
     .get(
       "https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=fa0hc3d4zd1nmjr1GE53oPlBLPtYPTv9"

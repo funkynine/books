@@ -6,6 +6,9 @@ import { BookActionTypes } from "../../ReduxStore/reducer/action-types";
 
 import s from "./Basket.module.scss";
 import { selectorGetCurrentBook } from "../../ReduxStore/reducer";
+
+// TODO: Imports order
+
 const Basket: FC = () => {
   const dispatch = useDispatch();
   const currentBook = useSelector(selectorGetCurrentBook);
