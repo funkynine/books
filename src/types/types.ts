@@ -1,19 +1,10 @@
-
-// TODO: delete this interface and use BookProps
-export interface BookUI {
-  id: string;
-  image: string;
-  order: number;
-}
-
-// TODO: rename to BookProps
-export interface BookComponent {
+export interface BookProps {
   id: string;
   image: string;
   order: number;
 }
 
 export interface BookStore {
-  bookList: BookUI[];
-  currentBook: BookUI | null;
+  bookList: BookProps[];
+  currentBook: BookProps | null;
 }

@@ -1,13 +1,14 @@
 import React, { FC } from "react";
-import { BookUI } from "../../types/types";
 import { useDispatch, useSelector } from "react-redux";
 
+// Actions
 import { BookActionTypes } from "../../ReduxStore/reducer/action-types";
 
-import s from "./Basket.module.scss";
+// Selectors
 import { selectorGetCurrentBook } from "../../ReduxStore/reducer";
 
-// TODO: Imports order
+// Styles
+import s from "./Basket.module.scss";
 
 const Basket: FC = () => {
   const dispatch = useDispatch();

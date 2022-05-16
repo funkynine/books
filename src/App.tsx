@@ -10,8 +10,6 @@ function App() {
 
   useEffect(() => {
     dispatch({ type: BookActionTypes.LOAD_DATA });
-    // TODO: Delete comment
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

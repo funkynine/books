@@ -1,4 +1,4 @@
-import { BookUI } from "../../types/types";
+import { BookProps } from "../../types/types";
 
 // TODO: rename folder from reducer to book
 
@@ -19,25 +19,25 @@ export enum BookActionTypes {
 
 interface GetBooksAction {
   type: BookActionTypes.GET_BOOKS;
-  payload: BookUI[];
+  payload: BookProps[];
 }
 
 interface LoadDataAction {
   type: BookActionTypes.LOAD_DATA;
-  payload: BookUI;
+  payload: BookProps;
 }
 
 interface ReorderBooksAction {
   type: BookActionTypes.REORDER_BOOKS;
-  payload: BookUI[];
+  payload: BookProps[];
 }
 
 interface SetCurrentBookAction {
   type: BookActionTypes.SET_CURRENT_BOOK;
-  payload: BookUI;
+  payload: BookProps;
 }
 
 interface RemoveBookAction {
   type: BookActionTypes.REMOVE_BOOK;
-  payload: BookUI;
+  payload: BookProps;
 }
