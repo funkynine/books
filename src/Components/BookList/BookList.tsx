@@ -2,7 +2,7 @@ import React, { FC, useMemo } from "react";
 import { useSelector } from "react-redux";
 
 // Selectors
-import { selectorGetBooks } from "../../ReduxStore/reducer";
+import { selectorGetBooks } from "../../ReduxStore/book";
 
 // Types
 import { BookProps } from "../../types/types";

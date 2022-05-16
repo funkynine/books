@@ -2,10 +2,10 @@ import React, { FC } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 // Actions
-import { BookActionTypes } from "../../ReduxStore/reducer/action-types";
+import { BookActionTypes } from "../../ReduxStore/book/action-types";
 
 // Selectors
-import { selectorGetCurrentBook } from "../../ReduxStore/reducer";
+import { selectorGetCurrentBook } from "../../ReduxStore/book";
 
 // Styles
 import s from "./Basket.module.scss";
