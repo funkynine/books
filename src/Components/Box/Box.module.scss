@@ -1,0 +1,20 @@
+@import "../../Styles/variables.scss";
+
+.bookshelf {
+  width: 1000px;
+  height: 50%;
+  margin: 0 auto;
+  border: 10px $brown solid;
+  overflow: hidden;
+  background-image: linear-gradient(
+    darken($brown, 32%),
+    darken($brown, 30%) 220px,
+    lighten($brown, 4%) 220px,
+    lighten($brown, 4%) 222px,
+    $brown 222px,
+    $brown 228px,
+    darken($brown, 4%) 228px,
+    darken($brown, 4%) 230px
+  );
+  background-size: 10px 230px;
+}
