@@ -8,15 +8,14 @@ import { BookProps } from "../../types/types";
 import {
   selectorGetBooks,
   selectorGetCurrentBook,
-} from "../../ReduxStore/reducer";
+} from "../../ReduxStore/book";
 
 // Actions
-import { BookActionTypes } from "../../ReduxStore/reducer/action-types";
+import { BookActionTypes } from "../../ReduxStore/book/action-types";
 
 // Styles
 import s from "./Book.module.scss";
 
-// TODO: Add memo to this component
 const Book: FC<BookProps> = ({ image, id, order }) => {
   const book = { id, order, image };
   const bookList = useSelector(selectorGetBooks);
